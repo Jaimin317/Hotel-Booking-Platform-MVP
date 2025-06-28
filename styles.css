@@ -1,0 +1,580 @@
+/* Reset & typography */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Segoe UI', sans-serif; line-height:1.6; color:#333; }
+a { text-decoration:none; }
+.btn { padding:0.6rem 1.2rem; border-radius:4px; }
+.btn-primary { background:#007BFF; color:#fff; }
+.btn:hover, .btn-primary:hover { opacity:0.9; }
+
+/* Header */
+header {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:1rem 2rem; background:#fff; box-shadow:0 2px 4px rgba(0,0,0,0.1);
+  position:sticky; top:0; z-index:1000;
+  header nav a {
+  font-weight: bold;
+}
+
+}
+.logo { font-size:1.5rem; font-weight:bold; }
+nav a { margin:0 1rem; color:#333; }
+nav a:hover { color:#1aef07; }
+
+/* Header Logo Alignment */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo-img {
+  height: 40px; /* adjust as needed */
+  margin-right: 10px;
+}
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  background: url('images/studio-background-concept-abstract-empty-light-gradient-purple-studio-room-background-product.jpg') center/cover no-repeat;
+  color:#fff; text-align:center; padding:6rem 2rem;
+}
+.page-hero { padding:4rem 2rem; background:#f9f9f9; text-align:center; }
+.page-hero h1 { font-size:5.5rem; }
+
+.hero h1 {
+  margin-bottom: 16px; /* space below the h1 */
+  font-size:5.5rem;
+}
+
+.hero p {
+  margin: 0 0 16px 0;   /* remove default top margin, add bottom space */
+  font-size:2rem;
+}
+
+.hero a.btn {
+  margin-top: 16px;     /* space above the button */
+  font-size:1.5rem;
+  display: inline-block; 
+}
+
+
+/* Features */
+.features {
+  display:flex; justify-content:space-around; padding:4rem 2rem; background: #ffffff;
+}
+.feature-card {
+  background:#000000; padding:2rem; width:30%; text-align:center;
+  border-radius:8px; box-shadow:0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Hotel grid */
+.hotel-grid {
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:2rem; padding:4rem 2rem;
+}
+.hotel-card {
+  border-radius:8px; overflow:hidden; box-shadow:0 2px 4px rgba(0,0,0,0.1);
+  transition:transform .3s;
+}
+.hotel-card:hover { transform:translateY(-5px); }
+.hotel-card img { width:100%; height:160px; object-fit:cover; }
+.hotel-card h3 { padding:1rem; }
+.hotel-card p { padding:0 1rem; color:#555; }
+.hotel-card .btn { margin:1rem; display:block; text-align:center; }
+
+/* Contact form */
+.contact-form {
+  max-width:600px; margin:2rem auto; padding:2rem; background:#f9f9f9;
+  border-radius:8px; box-shadow:0 2px 4px rgba(0,0,0,0.1);
+}
+.contact-form label { display:block; margin-bottom:.5rem; }
+.contact-form input, .contact-form textarea {
+  width:100%; padding:.75rem; margin-bottom:1.5rem; border:1px solid #ccc;
+  border-radius:4px;
+}
+
+/* Footer */
+footer {
+  text-align:center; padding:2rem; background:#fff; border-top:1px solid #eaeaea;
+  margin-top:4rem;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .features { flex-direction:column; align-items:center; }
+  .feature-card { width:80%; margin-bottom:2rem; }
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007BFF;
+}
+header nav a {
+  margin: 0 1rem;
+  color: #333;
+  text-decoration: none;
+}
+header nav a:hover {
+  color: #007BFF;
+}
+header .btn {
+  padding: 0.5rem 1rem;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+header .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Hotel Hero Section */
+.hotel-hero {
+  background: url('hero.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+.hotel-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hotel-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.hotel-hero .price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Hotel Details */
+.hotel-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #fff;
+  margin: 2rem 0;
+}
+.hotel-gallery {
+  width: 60%;
+}
+.hotel-gallery img {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+.hotel-info {
+  width: 35%;
+}
+.hotel-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.hotel-info p {
+  margin-bottom: 1rem;
+}
+.hotel-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.hotel-info ul {
+  list-style-type: none;
+}
+.hotel-info ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Booking Form */
+.booking-form {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.booking-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.booking-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.booking-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.booking-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.booking-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer
+  text-align :center
+::contentReference[oaicite: 0]{index=0}
+ 
+.hotel-hero {
+  position: relative;
+  background-image: url('images/futuristic-dubai-landscape.jpg'); /* Path to your background */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh; /* Adjust height as needed */
+  color: #fff;
+  text-align: center;
+}
+.hotel-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+.hotel-hero .hotel-hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Facilities */
+.facilities {
+  padding: 4rem 2rem;
+  background: #000000;
+  text-align: center;
+}
+.facilities h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.facility-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: start;
+}
+.facility-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  color: #000000;
+}
+.facility-card img {
+  width: 250px;
+  margin-bottom: 1rem;
+}
+.facility-card h3 {
+  font-size: 1.1rem;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #ffffff;
+}
+.testimonials h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #000000;
+}
+.testimonial-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 2rem;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+}
+.testimonial {
+  flex: 0 0 260px;
+  background: #000000;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  scroll-snap-align: start;
+}
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+.testimonial h4 {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Footer Design */
+.site-footer {
+  background: #12203c;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.footer-column {
+  flex: 1 1 200px;
+}
+.footer-logo {
+  height: 50px;
+  margin-bottom: 1rem;
+}
+.footer-column h3 {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 0.5rem;
+}
+.footer-column p {
+  color: #ccc;
+}
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-column li {
+  margin-bottom: 0.75rem;
+}
+.footer-column a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-column a:hover {
+  color: #fff;
+}
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  color: #12203c;
+  border-radius: 50%;
+  transition: transform 0.3s, background 0.3s;
+}
+.social-icon:hover {
+  background: #1abc9c;
+  color: #fff;
+  transform: scale(1.1);
+}
+.subscribe-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem;
+  background: #1abc9c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.subscribe-btn:hover {
+  background: #16a085;
+}
+@media(max-width:768px){
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-column {
+    text-align: center;
+  }
+}
+/* — Footer Styles — */
+.footer-bs {
+  background-color: #12203c;
+  color: #fff;
+  padding: 40px 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+/* (continue with the rest of the footer CSS provided earlier) */
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0f0f0f;
+  color: #f5f5f5;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Overlay background gradient */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  z-index: -1;
+}
+
+/* Header */
+.header {
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(15, 15, 15, 0.7);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+.navbar a {
+  margin: 0 1rem;
+  color: #dcdcdc;
+  transition: color 0.3s;
+}
+.navbar a:hover, .navbar .active {
+  color: #ffffff;
+}
+.btn {
+  background: #ff6b6b;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #ff3b3b;
+}
+.btn-primary {
+  margin-top: 1.5rem;
+  background: #4ecdc4;
+}
+.btn-primary:hover {
+  background: #38bfb5;
+}
+
+/* Hero Section */
+.page-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  text-align: center;
+  background: url('hero-bg.jpg') no-repeat center center/cover;
+  position: relative;
+}
+.page-hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  font-size: 1.25rem;
+}
+
+/* About Section */
+.about-section {
+  padding: 4rem 2rem;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+.about-text {
+  flex: 1 1 500px;
+  padding: 1rem;
+}
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.about-image {
+  flex: 1 1 400px;
+  padding: 1rem;
+}
+.about-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #111111;
+  color: #aaa;
+}
