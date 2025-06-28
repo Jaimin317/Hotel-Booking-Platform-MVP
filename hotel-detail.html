@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Detail - Royal Grand Hotel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Hotelify</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="listing.html">Hotels</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="listing.html" class="btn">Book Now</a>
+  </header>
+
+  <!-- Hotel Hero Section -->
+  <section class="hotel-hero">
+    <div class="hotel-hero-content">
+      <h1>Royal Grand Hotel</h1>
+      <p>Located at R.K Beach, Visakhapatnam</p>
+      <p class="price">₹1200 / night</p>
+      <a href="#booking-form" class="btn btn-primary">Book Now</a>
+    </div>
+  </section>
+
+  <!-- Hotel Details -->
+  <section class="hotel-details">
+    <div class="hotel-gallery">
+      <img src="images/dubai-4902764_1280.jpg" alt="Hotel Image 1">
+      
+    </div>
+    <div class="hotel-info">
+      <h2>About Royal Grand Hotel</h2>
+      <p>Experience luxury and comfort at the Royal Grand Hotel, offering world-class amenities and services.</p>
+      <h3>Amenities</h3>
+      <ul>
+        <li>Free Wi-Fi</li>
+        <li>Swimming Pool</li>
+        <li>24/7 Room Service</li>
+        <li>Fitness Center</li>
+        <li>Restaurant & Bar</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section id="booking-form" class="booking-form">
+    <h2>Book Your Stay</h2>
+    <form action="#" method="POST">
+      <label for="checkin">Check-in Date</label>
+      <input type="date" id="checkin" name="checkin" required>
+      <label for="checkout">Check-out Date</label>
+      <input type="date" id="checkout" name="checkout" required>
+      <label for="guests">Number of Guests</label>
+      <input type="number" id="guests" name="guests" min="1" value="1" required>
+      <button type="submit" class="btn btn-primary">Confirm Booking</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+  <div class="container">
+    <div class="footer-columns">
+      <div class="footer-column">
+        <img src="images/logo.png" alt="Hotelify Logo" class="footer-logo">
+        <p>Your comfort is our commitment. Book your stay with us today!</p>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="listing.html">Hotels</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Newsletter</h3>
+        <p>Subscribe for exclusive deals</p>
+        <input type="email" placeholder="Your email">
+        <button class="subscribe-btn">Subscribe</button>
+      </div>
+    </div>
+    <p class="footer-copyright">
+      &copy; 2025 Hotelify. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
+
+<script>
+  function getQueryParam(key) {
+    return new URLSearchParams(window.location.search).get(key);
+  }
+
+  const id = getQueryParam("id");
+  if (!id) {
+    document.getElementById("content").innerHTML = "<p>Hotel not found.</p>";
+  } else {
+    // Populate page with hotel details based on 'id'
+    // (see earlier JS snippet)
+  }
+</script>
+
